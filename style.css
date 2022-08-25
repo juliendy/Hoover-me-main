@@ -1,0 +1,38 @@
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
+    background: mistyrose;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 40rem;
+}
+
+.square {
+    background-color: #1d1d1d;
+    box-shadow: 0 0 .2rem #000;
+    height: 1.6rem;
+    width: 1.6rem;
+    margin: .2rem;
+    transition: all 1.5s ease;
+}
+
+.square:hover {
+    transition-duration: 0s;
+}
