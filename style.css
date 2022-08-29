@@ -1,5 +1,8 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"); */
+
 :root {
     font-size: 62.5%;
+    font-family: "Poppins", sans-serif;
 }
 
 * {
@@ -10,7 +13,7 @@
 
 body {
     font-size: 1.6rem;
-    background: mistyrose;
+    background: #eaebed;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,12 +27,58 @@ body {
     max-width: 40rem;
 }
 
+/* h2 {
+    position: absolute;
+    top: 15rem;
+}
+
+h2:hover {
+    font-size: 30px;
+} */
+
+h2 {
+    top: 10rem;
+	color: #100f10;
+	font-size: 4vw;
+	position: absolute;
+	text-transform: uppercase;
+    /* text-decoration: line-through; */
+	-webkit-text-stroke: 0.3vw #000000;
+}
+
+h2::before {
+	top: 1.5rem;
+	left: 0;
+	width: 50;
+	height: 70%;
+	color: #000000;
+	overflow: hidden;
+	position: absolute;
+	content: attr(data-text);
+	border-right: 0.5rem solid #000000;
+	-webkit-text-stroke: 0vw #f7f7fe;
+	animation: animate 8s linear infinite;
+}
+
+@keyframes animate {
+	0%,
+	10%,
+	100% {
+		width: 0;
+	}
+
+	70%,
+	90% {
+		width: 100%;
+	}
+}
+
 .square {
     background-color: #1d1d1d;
-    box-shadow: 0 0 .2rem #000;
+    box-shadow: 0 0 0.2rem #000;
     height: 1.6rem;
     width: 1.6rem;
-    margin: .2rem;
+    margin: 0.2rem;
     transition: all 1.5s ease;
 }
 
